@@ -23,10 +23,9 @@ public class ProductService {
   public List<Product> getProducts(){
     return repository.findAll();
   }
-  public Product getProductById(int id){
-    return repository.findById(id).orElse(null);
-  }
+
   public Product getProductByName(String name){
+
     return repository.findByName(name);
   }
   //DELETE method
